@@ -1,11 +1,12 @@
 
-import {Button} from "react-bootstrap";
+import Introduction from "./components/Introduction/Introduction";
 import NavbarMenu from "./components/NavbarMenu";
 
 function App() {
   return (
     <div >
       <NavbarMenu/>
+      <Introduction/>
     </div>
   );
 }
