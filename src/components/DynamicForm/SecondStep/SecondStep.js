@@ -16,16 +16,16 @@ export default function SecondStep() {
   const [selectOption, setSelectOption] = useState(null);
 
   const hobbiesSer = JSON.stringify(selectOption);
-  localStorage.setItem('Hobbies',hobbiesSer);
+  localStorage.setItem('hobbies',hobbiesSer);
 
   const onChangeAdditionalHobbie = (e)=>{
     const sport = e.target.value;
-    localStorage.setItem('adittionalHobbie',sport);
-  }
+    localStorage.setItem("adittionalHobbie",sport);
+  };
 
   return (
     <div>
-      <h2>Select your favvorite sport</h2>
+      <h2>Select your favorite sport</h2>
       <h4>Tell me about your hobbies</h4>
       <Container className="p-5 text-center">
         <Row className="justify-content-md-center">
@@ -34,7 +34,7 @@ export default function SecondStep() {
             <Select
             defaultValue={selectOption}
             onChange={setSelectOption}
-            options={options  }
+            options={options}
             isSearchable
             isMulti />
           </Col>
@@ -42,11 +42,11 @@ export default function SecondStep() {
             <h5>Do you want to add more?</h5>
             <Form.Control 
             type="text" 
-            placeholder="origami" 
+            placeholder="Origami" 
             onChange={(e) => onChangeAdditionalHobbie(e)} />
           </Col>
         </Row>
       </Container>
     </div>
-  )
+  );
 }
