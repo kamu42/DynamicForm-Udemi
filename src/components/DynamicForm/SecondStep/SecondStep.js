@@ -1,5 +1,4 @@
 import { Col, Container, Row, Form } from 'react-bootstrap';
-import './SecondStep.css';
 import Select from "react-select"
 import { useState } from 'react';
 
