@@ -2,9 +2,6 @@ import { Card, Col } from "react-bootstrap";
 
 export default function CardFruit({fruit, clickCard, selectedCard}) {
         const{id,icon,name,description}=fruit;
-        console.log(selectedCard)
-        console.log(fruit.id)
-
 
     return (
     <Col 
